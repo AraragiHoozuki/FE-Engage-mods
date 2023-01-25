@@ -345,6 +345,28 @@ public enum ItemData.Kinds
 }
 ```
 
+## Rod Types
+```csharp
+public enum ItemData.RodTypes
+{
+	None = 0;
+	Basic = 1;
+	Heal = 2;
+	Interference = 3;
+}
+```
+
+## Add Targets
+```csharp
+public enum ItemData.AddTargets
+{
+	None = 0;
+	Self = 1;
+	Around = 2;
+	Whole = 3;
+}
+```
+
 ## Item Flags
 
 ```csharp
