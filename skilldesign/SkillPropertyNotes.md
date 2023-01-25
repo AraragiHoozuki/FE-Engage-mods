@@ -139,7 +139,7 @@ AroundName, Operation and Value work like Act.
 Eg. HorseSkill: SID\_XXX, skill will be replaced by SID\_XXX when unit cabalgate a horse.
 
 ## Give Skill
-```
+```csharp
 public enum SkillData.GiveTargets
 {
 	Target = 0,
@@ -151,31 +151,31 @@ public enum SkillData.GiveTargets
 ```
 
 ## State
-```
+```csharp
 public enum SkillData.States
 {
-	None = 0;
-	Poison = 1;
-	DeadlyPoison = 2;
-	SeverePoison = 4;
-	Heal = 8;
-	Sleep = 16;
-	Silence = 32;
-	Charm = 64;
-	Confusion = 128;
-	Freeze = 256;
-	Weakness = 512;
-	Stun = 1024;
-	Interact = 2048;
-	Decoy = 4096;
-	NotEnhance = 8192;
-	Enhance = 65536;
-	Immovable = 131072;
-	NotMove = 262144;
-	NotWeaponWeight = 524288;
-	NotChainAttacked = 1048576;
-	IgnoreDebug = -2147483648;
-	PoisonMask = 7;
+	None = 0,
+	Poison = 1,
+	DeadlyPoison = 2,
+	SeverePoison = 4,
+	Heal = 8,
+	Sleep = 16,
+	Silence = 32,
+	Charm = 64,
+	Confusion = 128,
+	Freeze = 256,
+	Weakness = 512,
+	Stun = 1024,
+	Interact = 2048,
+	Decoy = 4096,
+	NotEnhance = 8192,
+	Enhance = 65536,
+	Immovable = 131072,
+	NotMove = 262144,
+	NotWeaponWeight = 524288,
+	NotChainAttacked = 1048576,
+	IgnoreDebug = -2147483648,
+	PoisonMask = 7,
 }
 ```
 
