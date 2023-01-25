@@ -2,7 +2,7 @@
 
 ## Cycle & Life
 
-skill duration, after <Life> times of <Cycle>, skill expires.
+skill duration, after 《Life》 times of 《Cycle》, skill expires.
 
 ```csharp
 public enum SkillData.Cycles
@@ -96,7 +96,7 @@ public enum SkillData.Stands
 
 ## Act
 
-string array separated by ";". Every <ActName> will be <ActOperation> by <ActValue>.
+string array separated by ";". Every 《ActName》 will be 《ActOperation》 by 《ActValue》.
 
 Eg.
 
@@ -144,7 +144,7 @@ Eg. HorseSkill: SID\_XXX, skill will be replaced by SID\_XXX when unit cabalgate
   
 - RangeO: Outer range
   
-- RangeAdd, RangeTarget: Targeted weapen type's range + <RangeAdd>
+- RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》
   
 
 ## Flag
