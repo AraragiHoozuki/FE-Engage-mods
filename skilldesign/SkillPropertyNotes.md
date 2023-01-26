@@ -187,7 +187,7 @@ public enum SkillData.States
   
 - RangeO: Outer range
   
-- RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》
+- RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》,  effect area + 《RangeExtend》
   
 
 ## Flag
