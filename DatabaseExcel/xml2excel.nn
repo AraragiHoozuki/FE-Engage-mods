@@ -1,0 +1,28 @@
+Elements2Table[list_] := Block[
+  {keys, values},
+  keys = {Keys@list[[1, 2]]};
+  values = Values@list[[All, 2]];
+  Join[keys, values]
+  ]
+ReadHeader[sheet_] := Block[
+  {headerEles},
+  headerEles = sheet[[3, 1, 3]];
+  Elements2Table[headerEles]
+  ]
+ReadData[sheet_] := Block[
+  {headerEles},
+  headerEles = sheet[[3, 2, 3]];
+  Elements2Table[headerEles]
+  ]
+ReadSheet[sheet_] := <|"Name" -> sheet[[2, 1, 2]], 
+  "Header" -> ReadHeader[sheet], "Data" -> ReadData[sheet]|>
+Xml2Excel[path_] := Block[
+  {xml, toexport},
+  xml = Import[path, "XML"];
+  toexport = ReadSheet /@ xml[[2, 3]];
+  toexport = 
+   Flatten[{#Name <> "Header" -> #Header, #Name -> #Data} & /@ 
+     toexport];
+  Export[ DirectoryName[path] <> FileNameTake[path] <> ".xlsx", 
+   toexport]
+  ]
