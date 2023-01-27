@@ -21,7 +21,7 @@ public enum SkillData.Cycles
 }
 ```
 
-### Timing
+### Timing
 
 ```csharp
 public enum SkillData.Timings
@@ -57,7 +57,7 @@ public enum SkillData.Timings
 }
 ```
 
-### Target
+### Target
 
 ```csharp
 public enum SkillData.Targets
@@ -73,7 +73,7 @@ public enum SkillData.Targets
 }
 ```
 
-### Frequency
+### Frequency
 
 ```csharp
 public enum SkillData.Frequencies
@@ -85,7 +85,7 @@ public enum SkillData.Frequencies
 }
 ```
 
-### Stand
+### Stand
 
 ```csharp
 public enum SkillData.Stands
@@ -96,7 +96,7 @@ public enum SkillData.Stands
 }
 ```
 
-### Act
+### Act
 
 string array separated by ";". Every 《ActName》 will be 《ActOperation》 by 《ActValue》.
 
@@ -111,7 +111,7 @@ Eg.
 
 This means that Opponent's power minus 20 (during battle).
 
-### Around
+### Around
 
 works like Act, but will affect units whin X spaces.
 
@@ -136,11 +136,11 @@ public enum SkillData.AroundTargets
 
 AroundName, Operation and Value work like Act.
 
-### HorseSkill, CovertSkill etc.
+### HorseSkill, CovertSkill etc.
 
 Eg. HorseSkill: SID\_XXX, skill will be replaced by SID\_XXX when unit cabalgate a horse.
 
-### Give Skill
+### Give Skill
 
 ```csharp
 public enum SkillData.GiveTargets
@@ -153,7 +153,7 @@ public enum SkillData.GiveTargets
 }
 ```
 
-### State
+### State
 
 ```csharp
 public enum SkillData.States
@@ -183,7 +183,7 @@ public enum SkillData.States
 }
 ```
 
-### Range
+### Range
 
 - RangeI: Inner range
   
@@ -192,7 +192,7 @@ public enum SkillData.States
 - RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》, effect area + 《RangeExtend》
   
 
-### Flag
+### Flag
 
 bitmask flag
 
