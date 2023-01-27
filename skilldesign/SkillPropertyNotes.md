@@ -1,6 +1,8 @@
-# Some Explanations for Skill properties
+# Engage Enums
 
-## Cycle & Life
+## Skill
+
+### Cycle & Life
 
 skill duration, after 《Life》 times of 《Cycle》, skill expires.
 
@@ -19,7 +21,7 @@ public enum SkillData.Cycles
 }
 ```
 
-## Timing
+### Timing
 
 ```csharp
 public enum SkillData.Timings
@@ -55,7 +57,7 @@ public enum SkillData.Timings
 }
 ```
 
-## Target
+### Target
 
 ```csharp
 public enum SkillData.Targets
@@ -71,7 +73,7 @@ public enum SkillData.Targets
 }
 ```
 
-## Frequency
+### Frequency
 
 ```csharp
 public enum SkillData.Frequencies
@@ -83,7 +85,7 @@ public enum SkillData.Frequencies
 }
 ```
 
-## Stand
+### Stand
 
 ```csharp
 public enum SkillData.Stands
@@ -94,7 +96,7 @@ public enum SkillData.Stands
 }
 ```
 
-## Act
+### Act
 
 string array separated by ";". Every 《ActName》 will be 《ActOperation》 by 《ActValue》.
 
@@ -109,7 +111,7 @@ Eg.
 
 This means that Opponent's power minus 20 (during battle).
 
-## Around
+### Around
 
 works like Act, but will affect units whin X spaces.
 
@@ -134,11 +136,11 @@ public enum SkillData.AroundTargets
 
 AroundName, Operation and Value work like Act.
 
-## HorseSkill, CovertSkill etc.
+### HorseSkill, CovertSkill etc.
 
 Eg. HorseSkill: SID\_XXX, skill will be replaced by SID\_XXX when unit cabalgate a horse.
 
-## Give Skill
+### Give Skill
 
 ```csharp
 public enum SkillData.GiveTargets
@@ -151,7 +153,7 @@ public enum SkillData.GiveTargets
 }
 ```
 
-## State
+### State
 
 ```csharp
 public enum SkillData.States
@@ -181,16 +183,16 @@ public enum SkillData.States
 }
 ```
 
-## Range
+### Range
 
 - RangeI: Inner range
   
 - RangeO: Outer range
   
-- RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》,  effect area + 《RangeExtend》
+- RangeAdd, RangeTarget: Targeted weapen type's range + 《RangeAdd》, effect area + 《RangeExtend》
   
 
-## Flag
+### Flag
 
 bitmask flag
 
@@ -263,160 +265,239 @@ public enum SkillData.Flags
 }
 ```
 
-# Items
+## Items
 
-Use Type
+### Use Type
 
 ```csharp
 public enum ItemData.UseTypes
 {
-	None = 0,
-	Attack = 1,
-	Heal = 2,
-	RestHeal = 3,
-	Revive = 4,
-	Warp = 5,
-	Rescue = 6,
-	EngageAdd = 7,
-	Rewarp = 8,
-	Freeze = 9,
-	Sleep = 10,
-	Silence = 11,
-	Charm = 12,
-	Berserk = 13,
-	Weakness = 14,
-	Again = 15,
-	Torch = 16,
-	Food = 17,
-	Rest = 18,
-	SightUp = 19,
-	WeaponLevelUp = 20,
-	GrowUp = 21,
-	Enhance = 22,
-	CCMaster = 23,
-	CCChange = 24,
-	CCExtra = 25,
-	Creation = 26,
-	Draw = 27,
-	GainExp = 28,
-	Stun = 29,
-	Detox = 30,
-	GiveSkill = 31,
-	Foodstuff = 32,
-	Gift = 33,
-	Material = 34,
-	FishingRod = 35,
-	Bless = 36,
-	BlessRest = 37,
-	BlessPlus = 38,
-	BlessRestPlus = 39,
-	CCEnchant = 40,
-	CCGunner = 41,
-	GainSkillPoint = 42,
+    None = 0,
+    Attack = 1,
+    Heal = 2,
+    RestHeal = 3,
+    Revive = 4,
+    Warp = 5,
+    Rescue = 6,
+    EngageAdd = 7,
+    Rewarp = 8,
+    Freeze = 9,
+    Sleep = 10,
+    Silence = 11,
+    Charm = 12,
+    Berserk = 13,
+    Weakness = 14,
+    Again = 15,
+    Torch = 16,
+    Food = 17,
+    Rest = 18,
+    SightUp = 19,
+    WeaponLevelUp = 20,
+    GrowUp = 21,
+    Enhance = 22,
+    CCMaster = 23,
+    CCChange = 24,
+    CCExtra = 25,
+    Creation = 26,
+    Draw = 27,
+    GainExp = 28,
+    Stun = 29,
+    Detox = 30,
+    GiveSkill = 31,
+    Foodstuff = 32,
+    Gift = 33,
+    Material = 34,
+    FishingRod = 35,
+    Bless = 36,
+    BlessRest = 37,
+    BlessPlus = 38,
+    BlessRestPlus = 39,
+    CCEnchant = 40,
+    CCGunner = 41,
+    GainSkillPoint = 42,
 }
 ```
 
-## Item Kinds
+### Item Kinds
 
 ```csharp
 public enum ItemData.Kinds
 {
-	None = 0,
-	Sword = 1,
-	Lance = 2,
-	Axe = 3,
-	Bow = 4,
-	Dagger = 5,
-	Magic = 6,
-	Rod = 7,
-	Fist = 8,
-	Special = 9,
-	Tool = 10,
-	Shield = 11,
-	Accessory = 12,
-	Precious = 13,
-	RefineIron = 14,
-	RefineSteel = 15,
-	RefineSilver = 16,
-	PieceOfBond = 17,
-	Gold = 18,
-	Num = 19,
-	WeaponNum = 10,
+    None = 0,
+    Sword = 1,
+    Lance = 2,
+    Axe = 3,
+    Bow = 4,
+    Dagger = 5,
+    Magic = 6,
+    Rod = 7,
+    Fist = 8,
+    Special = 9,
+    Tool = 10,
+    Shield = 11,
+    Accessory = 12,
+    Precious = 13,
+    RefineIron = 14,
+    RefineSteel = 15,
+    RefineSilver = 16,
+    PieceOfBond = 17,
+    Gold = 18,
+    Num = 19,
+    WeaponNum = 10,
 }
 ```
 
-## Rod Types
+### Rod Types
+
 ```csharp
 public enum ItemData.RodTypes
 {
-	None = 0;
-	Basic = 1;
-	Heal = 2;
-	Interference = 3;
+    None = 0;
+    Basic = 1;
+    Heal = 2;
+    Interference = 3;
 }
 ```
 
-## Add Targets
+### Add Targets
+
 ```csharp
 public enum ItemData.AddTargets
 {
-	None = 0;
-	Self = 1;
-	Around = 2;
-	Whole = 3;
+    None = 0;
+    Self = 1;
+    Around = 2;
+    Whole = 3;
 }
 ```
 
-## Item Flags
+### Item Flags
 
 ```csharp
 public enum ItemData.Flags
 {
-	Rarity = 1,
-	NotTrade = 2,
-	CanUse = 4,
-	OnlyChapter = 8,
-	OnlyEnemy = 16,
-	OnlyMale = 32,
-	OnlyFemale = 64,
-	Engage = 128,
-	IgnoreWeaponLevel = 256,
-	Unpublic = 512,
-	NotEntrust = 1024,
-	InvertInteract = 2048,
-	Download = 4096,
-	KeyDoor = 8192,
-	KeyTreasureBox = 16384,
-	AIUnequipable = 32768,
-	ReverseAttribute = 65536,
-	LunchBox = 131072,
-	SimpleHelp = 262144,
-	RangeTarget = 524288,
-	IgnoreCombat = 1048576,
-	ForcedCombat = 2097152,
-	Bless = 16777216,
-	Breath = 33554432,
-	Dragon = 67108864,
-	Bullet = 134217728,
+    Rarity = 1,
+    NotTrade = 2,
+    CanUse = 4,
+    OnlyChapter = 8,
+    OnlyEnemy = 16,
+    OnlyMale = 32,
+    OnlyFemale = 64,
+    Engage = 128,
+    IgnoreWeaponLevel = 256,
+    Unpublic = 512,
+    NotEntrust = 1024,
+    InvertInteract = 2048,
+    Download = 4096,
+    KeyDoor = 8192,
+    KeyTreasureBox = 16384,
+    AIUnequipable = 32768,
+    ReverseAttribute = 65536,
+    LunchBox = 131072,
+    SimpleHelp = 262144,
+    RangeTarget = 524288,
+    IgnoreCombat = 1048576,
+    ForcedCombat = 2097152,
+    Bless = 16777216,
+    Breath = 33554432,
+    Dragon = 67108864,
+    Bullet = 134217728,
 }
 ```
 
-# Generic Enum
+## Person
 
-## Weapon Attr
+### Country
+
+```csharp
+public enum PersonData.Country
+{
+	// Fields
+	Free = 0,
+	Lithos = 1,
+	Filene = 2,
+	Brodia = 3,
+	Ircion = 4,
+	Solum = 5,
+	Gradlon = 6,
+}
+```
+
+### ExistDieTiming
+
+```csharp
+public enum PersonData.Timing
+{
+	None = 0,
+	Begin = 1,
+	End = 2,
+	Chapter = 3,
+	Eternal = 4,
+}
+```
+
+### Color
+
+```csharp
+public enum PersonData.Colors
+{
+	None = 0,
+	Red = 1,
+	Green = 2,
+	Blue = 3,
+}
+```
+
+### Flag
+
+```csharp
+public enum PersonData.Flags
+{
+	CandidateForFriend = 1,
+	BelongName = 2,
+	Talent = 4,
+	IgnoreJobSkillRemove = 8,
+	DarkWarp = 16,
+	DressReverse = 32,
+	SimpleUI = 64,
+	DerivedHero = 128,
+	SummonWarp = 256,
+}
+```
+
+## God
+
+### Flag
+
+```csharp
+public enum GodData.Flags
+{
+	NoAddExp = 1,
+	EnableRingList = 2,
+	UnitIconDarkness = 4,
+	GaugeDarkness = 8,
+	OnlyEngageWeapon = 16,
+	Armlet = 32,
+	Hero = -2147483648,
+}
+```
+
+## Generic Enum
+
+### Weapon Attr
 
 ```csharp
 public enum WeaponMask.Flag 
 {
-	None = 1,
-	Sword = 2,
-	Lance = 4,
-	Axe = 8,GainSkillPoint
-	Bow = 16,
-	Dagger = 32,
-	Magic = 64,
-	Rod = 128,
-	Fist = 256,
-	Special = 512,
+    None = 1,
+    Sword = 2,
+    Lance = 4,
+    Axe = 8,GainSkillPoint
+    Bow = 16,
+    Dagger = 32,
+    Magic = 64,
+    Rod = 128,
+    Fist = 256,
+    Special = 512,
 }
 ```
