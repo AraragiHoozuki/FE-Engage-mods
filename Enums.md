@@ -465,6 +465,19 @@ public enum PersonData.Flags
 }
 ```
 
+## Job
+
+### Flag
+
+```csharp
+public enum JobData.Flags // TypeDefIndex: 9965
+{
+	CanCC = 1,
+	AnyoneCC = 2,
+	FemaleOnly = 4,
+	EncountMap = 8,
+}
+```
 ## God
 
 ### Flag
