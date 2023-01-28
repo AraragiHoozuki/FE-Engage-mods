@@ -1,5 +1,8 @@
 # Gamedata and dispose in XLSX
 
+## For better performance and more compatibility, use EngageXml instead to convert between xml and xlsx
+
+## Things below are deprecated
 along with excel2xml tool
 
 ```python
