@@ -517,6 +517,59 @@ public enum DisposData.Flags
 }
 ```
 
+## Terrain
+
+### Prohibitions
+```csharp
+public enum TerrainData.Prohibitions
+{
+	None = 0,
+	All = 1,
+	Ground = 2,
+	Near = 3,
+}
+```
+
+### Destroyers
+```csharp
+public enum TerrainData.Destroyers 
+{
+	None = 0,
+	Player = 1,
+	Enemy = 2,
+}
+```
+
+### Flag
+```csharp
+public enum TerrainData.Flags
+{
+	Door = 1,
+	Treasure = 2,
+	Visit = 4,
+	BowCannon = 8,
+	MagicCannon = 16,
+	FireCannon = 32,
+	NoShadow = 128,
+	FootSmoke = 256,
+	FootPrint = 512,
+	Roof = 1024,
+	SightMasking = 2048,
+	NotStun = 4096,
+	NotEngageAdd = 8192,
+	FlyEnable = 16384,
+	EngageHeal = 32768,
+	NotTarget = 65536,
+	NotWarp = 131072,
+	DamageHalfDisplay = 262144,
+	HideBreakIcon = 524288,
+	ShowPhaseIcon = 1048576,
+	Immobile = 536870912,
+	Minimap = 1073741824,
+	HelpSpot = -2147483648,
+}
+```
+
 ## Generic Enum
 
 ### Weapon Attr
