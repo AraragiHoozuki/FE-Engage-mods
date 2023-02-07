@@ -494,6 +494,32 @@ public enum GodData.Flags
 	Hero = -2147483648,
 }
 ```
+
+## Chapter
+### Flag
+```csharp
+public enum ChapterData.Flags
+{
+	Sally = 1,
+	CanBack = 2,
+	Sight = 4,
+	Kizuna = 8,
+	Hub = 16,
+	Gmap = 32,
+	Continue = 64,
+	Serious = 128,
+	Casual = 256,
+	Challenge = 512,
+	Relay = 1024,
+	Versus = 2048,
+	TestMap = 4096,
+	Opposition = 8192,
+	HighRankItem = 16384,
+	CanSlope = 32768,
+	SideStory = 1073741824,
+	Scenario = -2147483648,
+}
+```
 ## Dispos
 
 ### Flag
