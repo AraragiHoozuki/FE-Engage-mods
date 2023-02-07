@@ -496,6 +496,36 @@ public enum GodData.Flags
 ```
 
 ## Chapter
+
+### Gamespot.State
+```csharp
+public enum GmapSpot.State
+{
+	ReserveHide = 0,
+	Hide = 1,
+	ReserveActive = 2,
+	Active = 3,
+	ReserveCannotEnter = 4,
+	CannotEnter = 5,
+	ReserveBroken = 6,
+	Broken = 7,
+	CanSearch = 8,
+}
+```
+
+### Gamespot.EncountType
+```csharp
+public enum GmapSpot.EncountType
+{
+	None = 0,
+	Exturmination = 1,
+	TrainingFilene = 2,
+	TrainingBrodia = 3,
+	TrainingSolum = 4,
+	TrainingIrcion = 5,
+}
+```
+
 ### Flag
 ```csharp
 public enum ChapterData.Flags
