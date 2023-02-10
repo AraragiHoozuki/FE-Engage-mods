@@ -636,7 +636,7 @@ public enum WeaponMask.Flag
     None = 1,
     Sword = 2,
     Lance = 4,
-    Axe = 8,GainSkillPoint
+    Axe = 8,
     Bow = 16,
     Dagger = 32,
     Magic = 64,
