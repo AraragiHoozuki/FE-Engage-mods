@@ -1,67 +1,219 @@
+[UnitBasic]
+ActionCount: 行動回数
+AttackCount: 攻撃回数
+BattleTimes: 手番回数
+BattleCount: 総戦闘回数
+ReciveAttackCount: 被攻撃累積数
+RelianceAroundTotal: 隣接支援合計値
+BattleChainAttackCount: チェインアタック回数
+BattleChainAttackDefeat: チェインアタック撃破数
+BattleChainGuardCount: チェインガード回数
 
-# 技能操作 有效词条总结
-# <> 表示参数
-# [] 表示可选参数
-# | 参数举例
-# 部分基础值参看 Caculator.xml
+BattleArena: 闘技場中
+BattleDistance: 戦闘距離
+BattleLastTarget: 最終戦闘相手
+BattleStyle: 戦闘スタイル
+BlowDistance: 吹き飛ばし距離
+BlowRatio: 吹き飛ばし率
+BattleEscort: 護衛中
+BattlePinching: 挟撃中
+BattleSide: 立場
+  BattleSideChainDefense: 救援
+  BattleSideChainOffense: 援護
+  BattleSideDefense: 受け
+  BattleSideOffense: 攻め
 
-#
-相手の: 任意词条前缀，不加此前缀表示技能持有者，加上表示对手/目标
+InternalLevel: 内部レベル
+JobInternalLevel: 兵種の内部レベル
+JobRank: 兵種ランク
+  JobRankHigh: 上級職
+  JobRankLow: 下級職
+LinkDef: 連動の守備
+LinkLuck: 連動の幸運
+LinkX: 連動のX
+SupportAvoid: 支援回避
+SupportCritical: 支援必殺
+SupportHit: 支援命中
+SupportLevel: 支援レベル
+SupportSecure: 支援必殺回避
+TotalAction: 総行動回数
+TotalAttack: 総攻撃回数
+TotalDamage: 総ダメージ
+TotalLevel: 総レベル
+TotalOrder: 総手番回数
+TotalResult: 総攻撃結果
+MoveDistance: 移動距離
+MoveType: 移動タイプ
+ProbabilitySkill: スキル確率
+SkillCorrect: スキル確率補正
 
-#伤害相关 
-ダメージ: 受到伤害
-回復: 回復数值
-威力: 最终攻击力值
+UnitAttribute: ユニット属性
+  Dragon: 竜族属性
+  Evil: 邪竜属性
+  Fly: 飛行属性
+  Morph: 異形属性
+  Walk: 歩行属性
+UnitGod: 紋章士判定 ( == 0 or 1)
+UnitIdentity: 識別子
+UnitJob: 兵種判定
+UnitPerson: 個人判定
+UnitSkill: スキル所持
 
-#队形相关
-隣接ユニット数: 周围1格内单位数量
-周囲の味方数: 周围友军数量，周囲の味方数(<距离:number>, [武器种类:string | 魔道書])
-周囲の性別数: 基本同上，如：周囲の性別数(2, 女性) >= 2
-周囲の敵数: 参考周囲の味方数
-周囲の隣接男女数: 
-周囲のユニット数: 周囲のユニット数(<距离:number>)
-地形回避: 地形赋予的回避值
-
-#立场
-立場: 如 立場 == 援護
-
-#战斗相关
-
-移動距離: 战斗前移动的距离
-行動回数: 可以行动次数（再动）
-手番回数: 攻击轮数，或者说追击次数
-攻撃回数: 单轮攻击次数
-攻撃属性: = 物理属性 or 魔法属性
-攻撃結果: 判定攻击结果 如：攻撃結果(必殺) 攻撃結果(ブレイク)  攻撃結果 == ミス 攻撃結果 == ヒット，可以判定，也可以修改
-武器の種類: 
-武器の耐久値:
-武器の重さ:
-武器の消費:
-武器攻撃力:
-戦闘距離: 战斗时与对手的距离
-生存: 战斗后角色是否活着
-
-#吹飞
-吹き飛ばし率:
-吹き飛ばし距離:
-
-#Engage
-エンゲージカウント: 结合计量数
-エンゲージカウント限界: 结合计量上限
-エンゲージ中: 是否在结合中，エンゲージ中 == 0 表示不在结合中
-エンゲージOn: TBD
-エンゲージOff: TBD
-エンゲージ増加フェイズ: TBD
-エンゲージ回数: 结合次数(TBD)
-エンゲージ継続ターン: 
-
-#技能
-スキル所持: 判定是否持有技能，スキル所持(<技能id:string>) id 要去掉 SID_
-スキル確率(number):  スキル確率(<几率:number>)
-スキル確率補正: 改变角色所有几率发动技能的发动几率
+TerrainAvoid: 地形回避
+TerrainDefense: 地形防御
 
 
-#其他
-拾得アイテム: 获得物品， 如 拾得アイテム = アイテム("1000G")
-一時変数: 临时变量
-性別: 如：性別 == 男性
+AttackAttribute: 攻撃属性
+  Dark: 闇属性
+  Fire: 炎属性
+  Heavy: 重装属性
+  Ice: 氷属性
+  Light: 光属性
+  Magic: 魔法属性
+  None: 無属性
+  Physical: 物理属性
+  Thunder: 雷属性
+  Wind: 風属性
+
+DropItemRatio: アイテム落下率
+GainExp: 取得経験
+GainGold: 取得ゴールド
+PickupItem: 拾得アイテム
+
+Gender: 性別
+  GenderFemale: 女性
+  GenderMale: 男性
+
+PosLowX: x
+PosX: X
+PosLowZ: z
+PosZ: Z
+
+[BattleAlive]
+BattleAlive: 生存
+BattleDead: 死亡
+BattleRevive: 復活(=1 for unit that has hp stock)
+
+[AttackResult]
+BattleSceneResult: 攻撃結果
+  BattleSceneResultBreak: ブレイク
+  BattleSceneResultCritical: 必殺
+  BattleSceneResultEfficacy: 特効
+  BattleSceneResultHit: ヒット
+  BattleSceneResultMiss: ミス
+
+[God/Engage]
+EngageCount: エンゲージカウント
+EngageCountLimit: エンゲージカウント限界
+GodEngaging: エンゲージ中
+GodGoodWeapon: 紋章士の得意武器
+GodLevel: 神将レベル
+GodSkillCorrect: 神将スキル確率補正
+ProbabilityGodSkill: 神将スキル確率
+
+[Exp]
+ExpBattleGiveCount: 与戦闘経験累積数
+Exp: 経験値
+ExpDanceCount: 踊り経験累積数
+ExpDestroyCount: 撃破経験累積数
+ExpInterferenceCount: 妨害杖経験累積数
+ExpRodCount: 杖経験取累積数
+RodExp: 杖経験値
+RodType: 杖の種類
+
+[Map]
+MapPhase: フェイズ
+  PlayerPhase: 自軍
+  OtherPhase: 他軍
+OverlapCanRemove: 配置除去可能
+FixedEnemyCount: 行動済みの敵数
+FixedFriendCount: 行動済みの味方数
+Force: 軍
+  Force1st: １軍
+  Force2nd: ２軍
+  Force3rd: ３軍
+
+
+[GetInRange]
+# GetRangeCount(range, ItemKind, candidate)
+RangeEnemyCount: 周囲の敵数 calls GetRangeCount([range = 1], [ItemKind = 0 (All)], 1)
+RangeFriendCount: 周囲の味方数 calls GetRangeCount([range = 1], [ItemKind = 0 (All)], 0)
+RangeUnitCount: 周囲のユニット数 calls GetRangeCount([range = 1], [ItemKind = 0 (All)], 2)
+
+UnitAroundCountd: 隣接ユニット数 TBD
+
+# GetRangeGender(range, gender1, gender2)
+RangeGenderCount: 周囲の性別数 calls GetRangeGender(range, gender)
+AroundGenderCount: 周囲の隣接男女数 calls GetGenderCount(range, gender1, gender2)
+
+[Other]
+Temporary: 一時変数
+
+[System]
+# Weapon Advantage
+Bad: 不利
+Good: 有利
+
+# Difficulty
+DifficultyHard: ハード
+DifficultyLunatic: ルナティック
+Difficulty: ノーマル
+
+# GameMode
+GameMode: ゲームモード
+GameModeCasual: カジュアル
+GameModeClassic: クラシック
+
+# Index
+ItemIndex: アイテム
+JobIndex: 兵種
+PersonIndex: 個人
+SkillIndex: スキル
+
+# ItemKind
+Axe: 斧
+Bow: 弓
+Dagger: 短剣
+Fist: 拳
+Lance: 槍
+Magic: 魔道書
+Rod: 杖
+Special: 特殊
+Sword: 剣
+
+# RodType
+Basic: 基本杖
+Heal: 回復杖
+Interference: 妨害杖
+
+# Other
+MoveCost: 移動コスト
+ScreenShot: ss
+Vsync: vsync
+
+[App/Math]
+Lerp: lerp
+Log: log
+Round: round
+Scale: scale
+Dialog: Dialog
+Difficulty: 難易度
+Min: min
+Max: max
+Clamp: clamp
+Sin: sin
+Cos: cos
+Tan: tan
+Sqrt: sqrt
+Random: rand
+Exp: exp
+Comp: comp
+Cond: cond
+Completed: クリア済み
+Strlen: strlen
+Pow: pow
+Abs: abs
+Int: int
+Bit: bit
+Talk: Talk
+Turn: ターン
