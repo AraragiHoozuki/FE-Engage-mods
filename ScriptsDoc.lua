@@ -100,6 +100,7 @@ function HubIsEncountMap() return true end
 --#endregion
 
 --#region ScriptMap
+
 function MindGetForce() return 0 end
 function MindGetUnit() return 0 end
 function MindGetTargetUnit() return 0 end
@@ -203,6 +204,11 @@ function BattleAddTarget(unit) end
 ---@param x integer
 ---@param z integer
 function BattleStart(x, z) end
+--- do nothing
+function TurnEnd() end
+
+function GodSaveEquip() end
+function GodLoadEquip() end
 
 function MapGetTurn() return 0 end
 function MapGetPhase() return 0 end
@@ -213,6 +219,7 @@ function MapGetPosition(value) return 0 end
 ---@param z number
 ---@return number
 function MapGetHeight(x, z) return 0 end
+function MapCameraIsScroll() return true end
 
 function MapIsSight() return true end
 ---@param bool boolean
@@ -259,15 +266,14 @@ function EventEntryTurn(callback, min, max, force, cond, ...) end
 function EventEntryTurnAfter(callback, min, max, force, cond, ...) end
 function EventEntryTurnEnd(callback, min, max, force, cond, ...) end
 function EventEntryArea(callback, x1, z1, x2, z2, force, cond, ...) end
-function EventEntryDie(callback, unit, force, cond, ...) end
-function EventEntryReviveBefore(callback, unit, force, cond, ...) end
-function EventEntryReviveAfter(callback, unit, force, cond, ...) end
-function EventEntryFixed(callback, unit, force, cond, ...) end
----comment
+function EventEntryDie(callback, pid, force, cond, ...) end
+function EventEntryReviveBefore(callback, pid, force, cond, ...) end
+function EventEntryReviveAfter(callback, pid, force, cond, ...) end
+function EventEntryFixed(callback, pid, force, cond, ...) end
 ---@param callback function
----@param from_person integer|string index or pid
+---@param from_person string  pid
 ---@param from_force integer
----@param to_person integer|string index or pid
+---@param to_person string  pid
 ---@param to_force integer
 ---@param both? boolean default is true
 ---@param cond? string
@@ -281,4 +287,48 @@ function EventEntryBreakdown(callback, x, z, pid, cond, ...) end
 function EventEntryBreakdownEnemy(callback, x, z, pid, cond, ...) end
 function EventEntryWaypoint(callback, x, z, cond, ...) end
 function EventEntryCommand(callback, x, z, rang, mid, cond, ...) end
+function EventEntryPickup(callback, pid, cond, ...) end
+function EventEntryTargetSelect(callback, pid, cond, ...) end
+function EventEntryUnitCommandPrepare(callback, pid, cond, ...) end
+function EventEntryUnitCommandInterrupt(callback, pid, cond, ...) end
+function EventEntryTBox(callback, x, z, ...) end
+function EventEntryVisit(callback, x, z, ...) end
+function EventEntryDoor(callback, x1, z1, x2, z2, ...) end
+function EventEntryDestroy(callback, x1, z1, x2, z2, ...) end
+function EventEntryEngageBefore(callback, pid, cond, ...) end
+function EventEntryEngageAfter(callback, pid, cond, ...) end
+
+function EventOpenObject(x, z) end
+function EventOpenDoor(x, z) end
+function EventBreakObject(x, z) end
+---@param x integer
+---@param z integer
+---@param action integer
+function EventActionObject(x, z, action) end
+function EventActionMoveObject(x, z, moved_x, moved_z, action) end
+function EventStateObject(x, z, action) end
+--- do nothing
+function EventEngageSummon() end
+
+function EventIsPlayingObject(x, z) return true end
+function EventIsPlayingSkyCastle() return true end
+
+--#endregion
+
+
+--#region ScriptSystem
+
+---@param name string
+function Include(name) end
+--- do nothing
+function Log() end
+function Warning() end
+function TimeGetDelta() return 0.0 end
+function SkipIsBlackOut() return true end
+function SkipEscape() end
+function SkipPushStateAndDisable() end
+function SkipPopState() end
+function Talk(mid) end
+function Dialog(mid) end
+function Notice(mid) end
 --#endregion
