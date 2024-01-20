@@ -51,8 +51,6 @@ _config.xml file under every folder, for example:
 ```
 the config above means that the app will collect all params in this folder, merge them to `origanals\skill.xml`'s スキル sheet, and save result at `{CobaltModPath}\patches\xml\Skill.xml`, and save corresponding message file at `{CobaltModPath}\\patches\msbt\message\{Language}\skill.txt`.
 
-`ParamIdentifiers` tells the app by what attributes 
-
  ## Subfolder Param Mod:
  each mod file under subfolder should be like:
 ```xml
