@@ -73,7 +73,7 @@ the config above means that the app will collect all params in this folder, merg
  - Write "ID::Message" for msbt strings. If you omit ID (like the example), the MSBT ID will be generated automatically. ( tip: use `&#13;&#10;` for line break in Message)
  
  
- if you want to overwrite existing entries in original gamedata, you only need put their `ParamIdentifiers` attributes and the attribute you want to change, for example, to change Leuer's personal skill (given the  `ParamIdentifiers` is "Sid;") :
+ if you want to overwrite existing entries in original gamedata, you only need put their `ParamIdentifiers` attributes and the attribute you want to change, for example, to change Leuer's personal skill (given the  `ParamIdentifiers` is "Pid;") :
  ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Data>
