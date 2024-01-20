@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config
+    XmlFile="Person"
+    MessageFile="person"
+    ParamPath="/Book/Sheet[@Name='個人']/Data"
+    ParamIdentifiers="Pid;"
+/>

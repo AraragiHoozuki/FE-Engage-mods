@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config
+    XmlFile="Skill"
+    MessageFile="skill"
+    ParamPath="/Book/Sheet[@Name='スキル']/Data"
+    ParamIdentifiers="Sid;"
+/>

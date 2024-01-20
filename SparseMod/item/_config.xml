@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config
+    XmlFile="Item"
+    MessageFile="item"
+    ParamPath="/Book/Sheet[@Name='アイテム']/Data"
+    ParamIdentifiers="Iid;"
+/>
